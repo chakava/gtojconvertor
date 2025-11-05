@@ -37,17 +37,15 @@ module.exports = (req, res) => {
     // Convert to Jalaali
     const jDate = jalaali.toJalaali(year, month, day);
     
-    // Return JSON response
-    return res.status(200).json({
-      jy: jDate.jy,
-      jm: jDate.jm,
-      jd: jDate.jd,
-      gregorian: {
-        year: year,
-        month: month,
-        day: day
-      }
-    });
+    
+  const jDate = { jy:jDate.jy, jm: jDate.jm, jd: jDate.jd };
+
+return res
+  .status(200)
+  .type('text')
+  .send(`${jDate.jy}/${String(jDate.jm).padStart(2, '0')}/${String(jDate.jd).padStart(2, '0')}`);
+
+  
     
   } catch (error) {
     return res.status(400).json({ 
