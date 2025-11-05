@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "description": "Gregorian to Jalaali date converter API",
   "dependencies": {
-    "jalaali-js": "^2.0.3"
+    "jalaali-js": "^1.2.7"
   }
 }
