@@ -1,5 +1,4 @@
 const jalaali = require('jalaali-js');
-
 module.exports = (req, res) => {
   // Set CORS headers to allow requests from your WordPress site
   res.setHeader('Access-Control-Allow-Origin', '*');
