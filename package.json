@@ -1,0 +1,8 @@
+{
+  "name": "gtojconvertor",
+  "version": "1.0.0",
+  "description": "Gregorian to Jalaali date converter API",
+  "dependencies": {
+    "jalaali-js": "^2.0.3"
+  }
+}
